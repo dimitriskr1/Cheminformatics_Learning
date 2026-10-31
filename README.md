@@ -3,7 +3,7 @@
 # My Python & Cheminformatics Learning Journey
 
 ## About This Repository
-I am an MSc student in Pharmaceutical and Pharmacological Development with a strong wet-lab background in Chemistry and Natural Products. I am currently expanding my skill set by learning Python from scratch to learn more about the field of Computational Drug Discovery.
+I am an MSc student in Pharmacochemical and Pharmacological Development of Drug Molecules with a strong wet-lab background in Chemistry and Natural Products. I am currently expanding my skill set by learning Python from scratch to learn more about the field of Computational Drug Discovery.
 
 This repository tracks my progress as I learn to code. 
 
@@ -25,3 +25,14 @@ It takes a SMILES string of a molecule, calculates its molecular weight, and use
 
 **What the script does:** 
 It evaluates a natural bioactive molecule (e.g., Quercetin) against two crucial pharmacokinetic parameters simultaneously: Molecular Weight (< 500 Da) and Lipophilicity (LogP < 5). It outputs a structured report concluding whether the compound meets the combined drug-like criteria.
+
+
+# Script 03: Full Lipinski Rule of 5 High-Throughput Screener
+**Concepts Learned:** 
+* Python Dictionaries and `for` loops for automation
+* Calculating all 4 Lipinski parameters (MW, LogP, H-Donors, H-Acceptors)
+* Using Counters (`+= 1`) to track rule violations
+* Debugging common Python syntax errors
+
+**What the script does:** 
+It simulates a mini High-Throughput Screening (HTS) pipeline. It iterates through a library of compounds (including natural products like Quercetin and complex antibiotics like Erythromycin), calculates all four Lipinski descriptors, counts the number of violations, and strictly applies the pharmaceutical rule that a drug-like molecule must have $\le$ 1 violation.
