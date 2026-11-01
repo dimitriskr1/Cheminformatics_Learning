@@ -36,3 +36,16 @@ It evaluates a natural bioactive molecule (e.g., Quercetin) against two crucial 
 
 **What the script does:** 
 It simulates a mini High-Throughput Screening (HTS) pipeline. It iterates through a library of compounds (including natural products like Quercetin and complex antibiotics like Erythromycin), calculates all four Lipinski descriptors, counts the number of violations, and strictly applies the pharmaceutical rule that a drug-like molecule must have $\le$ 1 violation.
+
+
+## Script 04: Data Structuring and CSV Export with Pandas
+**(Folder: 04_Pandas_Reporter)**
+
+**Concepts Learned:** 
+* Storing iteration results into a List of Dictionaries
+* Utilizing the `pandas` library to create DataFrames
+* Exporting computational data to `.csv` files for downstream analysis
+* Project organization (keeping scripts and output data in dedicated directories)
+
+**What the script does:** 
+It upgrades the previous HTS screener by replacing raw text output with a structured `pandas.DataFrame`. After evaluating the compound library against Lipinski's rules, it automatically generates and exports a clean `lipinski_report.csv` file, demonstrating how cheminformatics pipelines prepare data for experimental scientists.
